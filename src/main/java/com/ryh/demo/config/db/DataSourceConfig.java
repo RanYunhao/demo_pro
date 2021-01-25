@@ -13,7 +13,7 @@ import org.springframework.transaction.PlatformTransactionManager;
 
 import javax.sql.DataSource;
 
-@Configuration(proxyBeanMethods = false)
+@Configuration
 public class DataSourceConfig {
 
     /**
