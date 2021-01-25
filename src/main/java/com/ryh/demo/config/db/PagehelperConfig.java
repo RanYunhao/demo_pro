@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 
 import java.util.Properties;
 
-@Configuration(proxyBeanMethods = false)
+@Configuration
 public class PagehelperConfig {
 
 

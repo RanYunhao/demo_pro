@@ -13,8 +13,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class,
         JdbcTemplateAutoConfiguration.class,
         RedisAutoConfiguration.class},
-        scanBasePackages= {"com.ryh.demo"},
-        proxyBeanMethods = false)
+        scanBasePackages= {"com.ryh.demo"})
 
 public class HsgApplication {
 
@@ -23,3 +22,4 @@ public class HsgApplication {
     }
 
 }
+
