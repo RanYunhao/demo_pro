@@ -1,6 +1,7 @@
 package com.ryh.demo.mapper;
 
 import com.ryh.demo.po.TsFymc;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -56,4 +57,6 @@ public interface TsFymcMapper {
     int updateByPrimaryKey(TsFymc record);
 
     List<TsFymc> listAll();
+
+    TsFymc getTsFymcByDm(@Param("dm") int dm);
 }

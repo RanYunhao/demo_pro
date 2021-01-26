@@ -239,4 +239,8 @@
   <select id="listAll" resultMap="BaseResultMap">
     select * from ts_fymc
   </select>
+
+  <select id="getTsFymcByDm" resultMap="BaseResultMap">
+    select * from TS_FYMC where DM = #{dm,jdbcType=SMALLINT}
+  </select>
 </mapper>
